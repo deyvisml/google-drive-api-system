@@ -8,14 +8,14 @@ class User extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'users';
-    protected $primaryKey       = 'usua_id';
+    protected $primaryKey       = 'usua_ide';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'usua_id',
+        'usua_ide',
     	'usua_enti_ide',
     	'usua_paterno',
     	'usua_materno',
