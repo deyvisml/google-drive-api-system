@@ -65,6 +65,21 @@ $routes->add('/inscribirme', 'Login::ainscribir');
 
 
 
+$routes->post('/folders', 'FolderController::index');
+
+$routes->post('/folders/(:num)/files', 'FolderController::files/$1');
+
+$routes->post('/folders/show-files', 'FolderController::show_files');
+
+$routes->post('/folders/create', 'FolderController::create');
+
+$routes->post('/folders/delete-file', 'FolderController::delete_file');
+
+$routes->post('/folders/upload-file', 'FolderController::upload_file');
+
+$routes->post('/folders/change-file-permission', 'FolderController::change_file_permission');
+
+
 
 /*
  * --------------------------------------------------------------------

@@ -1,0 +1,143 @@
+ERROR - 2024-01-20 09:28:01 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in D:\Downloads\google-drive-api-system\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\Downloads\google-drive-api-system\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'google-drive-ap...', 3306, '', 0)
+#1 D:\Downloads\google-drive-api-system\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Downloads\google-drive-api-system\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Downloads\google-drive-api-system\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Downloads\google-drive-api-system\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Downloads\google-drive-api-system\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\Downloads\google-drive-api-system\app\Controllers\Login.php(25): CodeIgniter\BaseModel->find()
+#7 D:\Downloads\google-drive-api-system\system\CodeIgniter.php(927): App\Controllers\Login->verificar()
+#8 D:\Downloads\google-drive-api-system\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\Downloads\google-drive-api-system\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Downloads\google-drive-api-system\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Downloads\google-drive-api-system\system\Commands\Server\rewrite.php(46): require_once('D:\\Downloads\\go...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in D:\Downloads\google-drive-api-system\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\Downloads\google-drive-api-system\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Downloads\google-drive-api-system\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Downloads\google-drive-api-system\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Downloads\google-drive-api-system\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Downloads\google-drive-api-system\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#5 D:\Downloads\google-drive-api-system\app\Controllers\Login.php(25): CodeIgniter\BaseModel->find()
+#6 D:\Downloads\google-drive-api-system\system\CodeIgniter.php(927): App\Controllers\Login->verificar()
+#7 D:\Downloads\google-drive-api-system\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\Downloads\google-drive-api-system\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Downloads\google-drive-api-system\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\Downloads\google-drive-api-system\system\Commands\Server\rewrite.php(46): require_once('D:\\Downloads\\go...')
+#11 {main}
+CRITICAL - 2024-01-20 09:28:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `usua_user` = :usua_user:
+AND `usua_pass` = :usua_pass:
+AND `usua_esta_ide` = :usua_esta_ide:', [...], false)
+ 3 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(false, null)
+ 5 APPPATH\Controllers\Login.php(25): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-20 10:24:39 --> Undefined variable $forms
+in APPPATH\Views\pages\ManageFolders.php on line 44.
+ 1 APPPATH\Views\pages\ManageFolders.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forms', 'APPPATH\\Views\\pages\\ManageFolders.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\ManageFolders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/ManageFolders.php', [], true)
+ 5 APPPATH\Controllers\FolderController.php(17): view('pages/ManageFolders.php')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-20 10:24:51 --> Undefined variable $forms
+in APPPATH\Views\pages\ManageFolders.php on line 44.
+ 1 APPPATH\Views\pages\ManageFolders.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $forms', 'APPPATH\\Views\\pages\\ManageFolders.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\ManageFolders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/ManageFolders.php', [], true)
+ 5 APPPATH\Controllers\FolderController.php(17): view('pages/ManageFolders.php')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-20 10:29:27 --> Undefined variable $folders
+in APPPATH\Views\pages\ManageFolders.php on line 39.
+ 1 APPPATH\Views\pages\ManageFolders.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $folders', 'APPPATH\\Views\\pages\\ManageFolders.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\ManageFolders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/ManageFolders.php', [], true)
+ 5 APPPATH\Controllers\FolderController.php(17): view('pages/ManageFolders.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-20 10:29:30 --> Undefined variable $folders
+in APPPATH\Views\pages\ManageFolders.php on line 39.
+ 1 APPPATH\Views\pages\ManageFolders.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $folders', 'APPPATH\\Views\\pages\\ManageFolders.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\ManageFolders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/ManageFolders.php', [], true)
+ 5 APPPATH\Controllers\FolderController.php(17): view('pages/ManageFolders.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-20 10:29:36 --> Undefined variable $folders
+in APPPATH\Views\pages\ManageFolders.php on line 39.
+ 1 APPPATH\Views\pages\ManageFolders.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $folders', 'APPPATH\\Views\\pages\\ManageFolders.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\ManageFolders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/ManageFolders.php', [], true)
+ 5 APPPATH\Controllers\FolderController.php(17): view('pages/ManageFolders.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-20 10:32:50 --> Attempt to read property "name" on array
+in APPPATH\Views\pages\ManageFolders.php on line 43.
+ 1 APPPATH\Views\pages\ManageFolders.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Views\\pages\\ManageFolders.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\ManageFolders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/ManageFolders.php', [], true)
+ 5 APPPATH\Controllers\FolderController.php(23): view('pages/ManageFolders.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-20 10:36:16 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\FolderController.php on line 14.
+ 1 APPPATH\Controllers\FolderController.php(14): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-20 10:36:20 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\FolderController.php on line 14.
+ 1 APPPATH\Controllers\FolderController.php(14): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-20 10:36:24 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\FolderController.php on line 14.
+ 1 APPPATH\Controllers\FolderController.php(14): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,37 @@
+CRITICAL - 2024-01-24 16:57:21 --> Call to a member function isValid() on null
+in APPPATH\Controllers\FolderController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->upload_file()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-24 16:59:03 --> Call to a member function isValid() on null
+in APPPATH\Controllers\FolderController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->upload_file()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-24 18:35:08 --> Too few arguments to function App\Controllers\FolderController::upload_file_api(), 0 passed in D:\Downloads\google-drive-api-system\app\Controllers\FolderController.php on line 189 and exactly 3 expected
+in APPPATH\Controllers\FolderController.php on line 210.
+ 1 APPPATH\Controllers\FolderController.php(189): App\Controllers\FolderController->upload_file_api()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->upload_file()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-24 18:38:03 --> Call to undefined function App\Controllers\rootPath()
+in APPPATH\Controllers\FolderController.php on line 186.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->upload_file()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-01-24 18:40:33 --> Undefined variable $url
+in APPPATH\Controllers\FolderController.php on line 189.
+ 1 APPPATH\Controllers\FolderController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $url', 'APPPATH\\Controllers\\FolderController.php', 189)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\FolderController->upload_file()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

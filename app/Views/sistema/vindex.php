@@ -1,16 +1,3 @@
-<?php if ($go=="true"): ?>
-	<script>
-		$(document).ready(function(){
-			cargarFuncion(
-				'/inscribir',
-                'Inscripciones',
-                'Inscribirme',
-                'Bienvenido, llene el formulario para inscribirte en el Torneo.'
-			);
-		});
-	</script>
-<?php endif ?>
-
 <?php
 	use App\Libraries\Componente;
 ?>

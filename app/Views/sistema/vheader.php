@@ -116,6 +116,17 @@
 
 
     <script src="<?=$base; ?>/assets/vendors/gridjs/gridjs.umd.min.js" defer></script>
+    
+    <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Data Tables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+
+    <!-- Dropzone -->
+    <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+<link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
 
     <script>
         function cargarFuncion(url,modulo,nombre,descripcion){
@@ -124,7 +135,7 @@
             param={
                 url:url
             };
-            $.post("<?php echo base_url(); ?>"+url,param,function(data){
+            $.post("<?php echo base_url(); ?>"+url, param, function(data){
                 $("#moduloRol").html(modulo);
                 $("#nombreRol").html(nombre);                
                 $("#descripcionRol").html(descripcion);
@@ -132,6 +143,7 @@
                 closeCargar();
             });
         }
+        
         function openCargar(mensaje="Estamos procesando su solicitud..."){
             $("#openCargarMensaje").html(mensaje);
             $("#openCargar").modal("show");
