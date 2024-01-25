@@ -37,7 +37,7 @@ class FolderController extends BaseController
 
     public function files($folder_id)
     {
-        $root_folder_id = 3; //$folder_id;
+        $root_folder_id = $folder_id;
 
         $current_folder_id = $folder_id;
 
