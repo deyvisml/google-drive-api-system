@@ -138,7 +138,13 @@
                 <tbody>
                     <?php foreach ($files as $file) : ?>
                         <tr>
-                            <td><?php echo $file->name ?></td>
+                            <td class="d-flex align-items-center">
+                                <div class="d-inline-block overflow-hidden me-2" style="width: 25px !important; height: 25px !important;">
+                                    <img src="<?php echo base_url('assets/icons/' . 'folder'/*$file->kind*/ . '.png') ?>" alt="" style="object-fit: contain !important; width: 100% !important;">
+                                </div> 
+                                <span>
+                                    <?php echo $file->name ?></td>
+                                </span>
                             <td><?php echo $file->owner ?></td>
                             <td><?php echo $file->created_at ?></td>
                             <td><?php echo $file->modified_at ?></td>
